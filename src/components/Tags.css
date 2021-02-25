@@ -1,0 +1,42 @@
+.tags {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 3rem;
+    border: 1px black solid;
+    border-radius: 8px;
+  }
+  
+  .taglist li:hover {
+      color:#56fd73;
+  }
+  .tags ul {
+    list-style-type: none;
+    font-family: cursive;
+  }
+  li {
+    cursor: pointer;
+  }
+  .tags input {
+    height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-family: cursive;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tags button {
+    font-family: cursive;
+    cursor: pointer;
+    margin:1rem;
+  }
+  .deleteList li:hover{
+
+    color:red;
+
+  }
+  

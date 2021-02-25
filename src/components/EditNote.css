@@ -1,0 +1,61 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 18rem;
+    margin: 0.1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+  }
+  
+  .note .colorPicker TwitterPicker {
+    position: absolute;
+  }
+  
+  .note h2,
+  p {
+    font-family: cursive;
+    padding: 0.5rem;
+  }
+  .note small {
+    padding: 0.5rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .note .note-text {
+    min-height: 4rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  .note Label {
+    font-family: cursive;
+  }
+  .note Select {
+    font-family: cursive;
+    margin: 0.25rem;
+    border: none;
+  }
+  .note input {
+    margin: 0.25rem;
+    border: none;
+    font-family: cursive;
+  }
+  .note textarea {
+    border: none;
+    font-family: cursive;
+  }
+  .note button {
+    margin: 0.25rem;
+    font-family: cursive;
+    border: thin black solid;
+    border-radius: 8px;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    cursor: pointer;
+  }
+  
+  .note h2 span {
+    cursor: pointer;
+  }

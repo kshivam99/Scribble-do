@@ -1,0 +1,106 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+hr {
+  margin: 1rem;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+}
+h1 {
+  font-family: cursive;
+  color: #56fd73;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.tag {
+  width: 50%;
+}
+.title {
+  text-align: center;
+  font-family: cursive;
+  min-height: 7rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+.title h1 {
+  margin-bottom: 0;
+  color: #56fd73;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px #56fd73;
+
+}
+.body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.otherNotes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.pinnedNotes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-family: cursive;
+}
+.footer div{
+  display:flex;
+  justify-content: center;
+  
+}
+
+.fa-twitter {
+  background:white;
+  color: black;
+  padding:1rem;
+  margin:1rem;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: white;
+  color: black;
+  padding:1rem;
+  margin:1rem;
+  text-decoration: none;
+}
+
+.fa-github {
+  background: white;
+  color: black;
+  padding:1rem;
+  margin:1rem;
+  text-decoration: none;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}

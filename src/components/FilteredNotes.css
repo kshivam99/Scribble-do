@@ -1,0 +1,12 @@
+.tagFilterBody{
+    display:flex;
+    flex-direction:column;
+}
+
+.tagFilter{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin:2rem;
+    padding:2rem;
+
+}
