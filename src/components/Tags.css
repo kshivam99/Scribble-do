@@ -15,7 +15,7 @@
   }
   .tags ul {
     list-style-type: none;
-    font-family: cursive;
+    font-family: Georgia, serif;
   }
   li {
     cursor: pointer;
@@ -24,13 +24,13 @@
     height: 2rem;
     border-radius: 5px;
     text-align: center;
-    font-family: cursive;
+    font-family: Georgia, serif;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .tags button {
-    font-family: cursive;
+    font-family: Georgia, serif;
     cursor: pointer;
     margin:1rem;
   }

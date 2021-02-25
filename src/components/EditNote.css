@@ -15,7 +15,7 @@
   
   .note h2,
   p {
-    font-family: cursive;
+    font-family: Georgia, serif;
     padding: 0.5rem;
   }
   .note small {
@@ -30,25 +30,25 @@
   }
   
   .note Label {
-    font-family: cursive;
+    font-family: Georgia, serif;
   }
   .note Select {
-    font-family: cursive;
+    font-family: Georgia, serif;
     margin: 0.25rem;
     border: none;
   }
   .note input {
     margin: 0.25rem;
     border: none;
-    font-family: cursive;
+    font-family: Georgia, serif;
   }
   .note textarea {
     border: none;
-    font-family: cursive;
+    font-family: Georgia, serif;
   }
   .note button {
     margin: 0.25rem;
-    font-family: cursive;
+    font-family: Georgia, serif;
     border: thin black solid;
     border-radius: 8px;
     padding: 0.2rem;
