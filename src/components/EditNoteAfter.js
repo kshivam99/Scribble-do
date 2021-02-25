@@ -21,8 +21,9 @@ export default function EditNoteAfter({note, notes, setNotes, editOn, setEditOn,
     return (
         <div>
 
-        <input  onChange={(e)=>setTitle(e.target.value)} value={title}></input>
+        <input  placeholder="Title"  onChange={(e)=>setTitle(e.target.value)} value={title}></input>
       <textarea
+        placeholder="Body"
         className="note-text"
         value={text}
         onChange={(e) => setText(e.target.value)}

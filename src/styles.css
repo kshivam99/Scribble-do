@@ -9,6 +9,10 @@
   vertical-align: baseline;
   background: transparent;
 }
+
+body {
+  background-color: #D1FAE5;
+}
 hr {
   margin: 1rem;
 }
@@ -19,8 +23,8 @@ hr {
   align-items: flex-start;
 }
 h1 {
-  font-family: cursive;
-  color: #56fd73;
+  font-family: Georgia, serif;
+  color: #064E3B;
   font-size: 1.5rem;
   margin: 1rem;
 }
@@ -30,16 +34,15 @@ h1 {
 }
 .title {
   text-align: center;
-  font-family: cursive;
+  font-family: Georgia, serif;
   min-height: 7rem;
   padding-top: 2rem;
   cursor: pointer;
 }
 .title h1 {
   margin-bottom: 0;
-  color: #56fd73;
+  color: #064E3B;
   font-size: 2rem;
-  text-shadow: 2px 2px 8px #56fd73;
 
 }
 .body {
@@ -52,12 +55,12 @@ h1 {
 }
 .otherNotes {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .pinnedNotes {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 .footer {
   left: 0;
@@ -65,7 +68,7 @@ h1 {
   width: 100%;
   color: black;
   text-align: center;
-  font-family: cursive;
+  font-family: Georgia, serif;
 }
 .footer div{
   display:flex;
@@ -103,4 +106,21 @@ h1 {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  background-color: #D1FAE5;
+}
+
+button {
+  min-width: 5rem;
+}
+
+.addButton:hover {
+  background-color:greenyellow;
+}
+
+.pinButton:hover {
+    background-color: yellow;
+}
+
+.deleteButton:hover {
+  background-color: tomato;
 }

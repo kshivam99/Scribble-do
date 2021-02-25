@@ -60,13 +60,15 @@ export default function EditNote({ notes, setNotes, tags }) {
       <div>
         <button onClick={() => setViewModal(!viewModal)}>Color</button>
         <button
-          style={{ backgroundColor: pin ? "yellow" : "white" }}
+          className="pinButton"
+          style={{ backgroundColor: pin ? "yellow" : "inherit" }}
           onClick={() => setPin(!pin)}
         >
           <span>📌</span>
         </button>
 
         <button
+        className="addButton"
           onClick={() => {
             addNote();
           }}

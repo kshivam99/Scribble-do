@@ -5,6 +5,7 @@ import EditNoteAfter from "./EditNoteAfter";
 export default function Note({ note, notes, setNotes, tags, setTags }) {
   const [viewModal, setViewModal] = useState(false);
   const [editOn, setEditOn] = useState(false);
+  
   const editPin = () => {
     setNotes((prev) =>
       prev.map((item) =>
@@ -41,10 +42,13 @@ export default function Note({ note, notes, setNotes, tags, setTags }) {
       <div>
         <button onClick={() => setViewModal(!viewModal)}>Edit Color</button>
         
-        <button style={{ display: "inline" }} onClick={() => editPin()}>
+        <button 
+        className="pinButton"
+         onClick={() => editPin()}>
           {note.pinned ? "📌" : "Pin this note"}
         </button>
         <button
+          className="deleteButton"
           onClick={() => {
             deleteNote();
             console.log("delete clicked");
