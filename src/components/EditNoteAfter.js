@@ -7,21 +7,19 @@ export default function EditNoteAfter({note, notes, setNotes, editOn, setEditOn,
     const [text, setText] = useState(note.text);
     const [tagChange, setTagChange] = useState(note.tag);
 
-    const submitChanges=(title, text, tagChange)=>{
+    const submitChanges = (title, text, tagChange) =>
+    {
         setEditOn(false);
-        console.log("inside edit")
-     setNotes((prev) =>
-      prev.map((item) =>
-        item.id === note.id ? { ...item, title:title, text:text, tag:tagChange } : item
-      )
-    );
-  };
-
+        setNotes((prev) =>
+            prev.map((item) =>
+                item.id === note.id ? { ...item, title:title, text:text, tag:tagChange } : item
+                    )
+                 );
+     };
 
     return (
-        <div>
-
-        <input  placeholder="Title"  onChange={(e)=>setTitle(e.target.value)} value={title}></input>
+    <div>
+      <input  placeholder="Title"  onChange={(e)=>setTitle(e.target.value)} value={title}></input>
       <textarea
         placeholder="Body"
         className="note-text"
@@ -40,8 +38,7 @@ export default function EditNoteAfter({note, notes, setNotes, editOn, setEditOn,
           </option>
         ))}
       </select>
-      <button onClick={()=>submitChanges(title, text, tagChange )}>Done Editing</button>
-      
+      <button onClick={()=>submitChanges(title, text, tagChange )}>Done Editing</button>  
     </div>
     );
 };

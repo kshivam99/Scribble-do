@@ -20,11 +20,13 @@ export default function Body({ notes, setNotes, tags, setTags }){
       <h1> Other Notes</h1>
       <div className="otherNotes">
         {notes.map((note) =>
-          !note.pinned ? (
+          !note.pinned ? 
+          (
             <div key={note.id}>
               <Note note={note} notes={notes} setNotes={setNotes} tags={tags} setTags={setTags} /> &nbsp;
             </div>
-          ) : (
+          ) :
+          (
             <div style={{ display: "none" }}></div>
           )
         )}

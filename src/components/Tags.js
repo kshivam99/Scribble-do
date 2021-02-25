@@ -5,14 +5,11 @@ export default function Tags({ tags, setTags, setActiveTag }) {
 
   const [viewDelete, setViewDelete] = useState(false);
 
-
   const deleteTag=(tagToDelete)=>{
     let newObj = [...tags];
     newObj = tags.filter((item) => item !== tagToDelete);
     setTags(newObj);
-
   }
-
 
   return (
     <div className="tags">
@@ -40,8 +37,7 @@ export default function Tags({ tags, setTags, setActiveTag }) {
             {tag}
           </li>
         ))}
-      </ul>
-      
+      </ul> 
     </div>
   );
 };

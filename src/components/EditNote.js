@@ -44,7 +44,6 @@ export default function EditNote({ notes, setNotes, tags }) {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-
       <select
         onChange={(e) => {
           setTag(e.target.value);
@@ -66,7 +65,6 @@ export default function EditNote({ notes, setNotes, tags }) {
         >
           <span>📌</span>
         </button>
-
         <button
         className="addButton"
           onClick={() => {
@@ -75,7 +73,6 @@ export default function EditNote({ notes, setNotes, tags }) {
         >
           Add
         </button>
-
         <div
           className="colorPicker"
           style={{ display: viewModal ? "" : "none" }}

@@ -5,7 +5,7 @@ import EditNoteAfter from "./EditNoteAfter";
 export default function Note({ note, notes, setNotes, tags, setTags }) {
   const [viewModal, setViewModal] = useState(false);
   const [editOn, setEditOn] = useState(false);
-  
+
   const editPin = () => {
     setNotes((prev) =>
       prev.map((item) =>
@@ -36,12 +36,9 @@ export default function Note({ note, notes, setNotes, tags, setTags }) {
       <>
       <h2>{note.title} &nbsp; <span onClick={()=>setEditOn(true)}>🖊️</span></h2>
       <small>{note.tag}</small>
-      <p>{note.text}</p>
-      
-      
+      <p>{note.text}</p> 
       <div>
-        <button onClick={() => setViewModal(!viewModal)}>Edit Color</button>
-        
+        <button onClick={() => setViewModal(!viewModal)}>Edit Color</button> 
         <button 
         className="pinButton"
          onClick={() => editPin()}>

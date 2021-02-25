@@ -14,8 +14,7 @@ export default function App() {
   useEffect(()=>{
     localStorage.setItem("notes", JSON.stringify(notes));
   },[notes])
-
-  
+ 
   useEffect(()=>{
     localStorage.setItem("tags", JSON.stringify(tags));
     console.log(localStorage.getItem("tags"))
@@ -41,9 +40,10 @@ export default function App() {
             setActiveTag={setActiveTag}
           />
         </div>
-        {activeTag==="none"?(<Body notes={notes} setNotes={setNotes} tags={tags} setTags={setTags} />):(<FilteredNotes notes={notes} setNotes={setNotes} activeTag={activeTag} setActiveTag={setActiveTag} />
-)}
-        
+        {activeTag==="none"?
+        (<Body notes={notes} setNotes={setNotes} tags={tags} setTags={setTags} />):
+        (<FilteredNotes notes={notes} setNotes={setNotes} activeTag={activeTag} setActiveTag={setActiveTag} />
+        )}
       </div>
       <hr
         style={{
